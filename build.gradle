@@ -3,21 +3,18 @@ plugins {
     id 'java'
 }
 
-group 'org.geyser.extension.exampleid'
+group 'ca.carbuino.extension.emotemenu'
 version '1.0.0'
 
 repositories {
     maven {
         url 'https://repo.opencollab.dev/maven-snapshots'
-        mavenContent {
-            snapshotsOnly()
-        }
     }
     maven {
         url 'https://repo.opencollab.dev/maven-releases'
-        mavenContent {
-            releasesOnly()
-        }
+    }
+    maven {
+        url 'https://jitpack.io'
     }
     mavenLocal()
     mavenCentral()
@@ -25,7 +22,9 @@ repositories {
 
 dependencies {
     // Geyser API - needed for all extensions
-    compileOnly 'org.geysermc.geyser:api:2.2.0-SNAPSHOT'
+    compileOnly 'org.geysermc.geyser:api:2.2.3-SNAPSHOT'
 
     // Include other dependencies here - e.g. for configuration.
+    compileOnly 'org.geysermc.geyser:core:2.2.3-SNAPSHOT'
+    
 }
