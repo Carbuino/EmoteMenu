@@ -4,7 +4,7 @@ plugins {
 }
 
 group 'ca.carbuino.extension.emotemenu'
-version '1.0.0'
+version '1.1.0'
 
 repositories {
     maven {
@@ -22,9 +22,9 @@ repositories {
 
 dependencies {
     // Geyser API - needed for all extensions
-    compileOnly 'org.geysermc.geyser:api:2.2.3-SNAPSHOT'
+    compileOnly 'org.geysermc.geyser:api:2.4.1-SNAPSHOT'
 
     // Include other dependencies here - e.g. for configuration.
-    compileOnly 'org.geysermc.geyser:core:2.2.3-SNAPSHOT'
+    compileOnly 'org.geysermc.geyser:core:2.4.1-SNAPSHOT'
     
 }
